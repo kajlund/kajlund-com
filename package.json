@@ -1,0 +1,27 @@
+{
+  "name": "kajlund-com",
+  "version": "1.0.0",
+  "description": "Personal webpage repo",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "nodemon ./server",
+    "start": "node ./server"
+  },
+  "keywords": [],
+  "author": "LuKa <kaj.lund@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.7.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "nodemon": "^2.0.4",
+    "pino-pretty": "^4.1.0",
+    "prettier": "^2.0.5"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "fastify": "^3.2.1",
+    "fastify-plugin": "^2.3.2",
+    "fastify-static": "^3.2.0"
+  }
+}
