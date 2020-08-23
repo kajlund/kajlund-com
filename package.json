@@ -2,10 +2,10 @@
   "name": "kajlund-com",
   "version": "1.0.0",
   "description": "Personal webpage repo",
-  "main": "server/index.js",
+  "main": "./server.js",
   "scripts": {
-    "dev": "nodemon ./server",
-    "start": "node ./server"
+    "dev": "nodemon ./server.js",
+    "start": "node ./server.js"
   },
   "keywords": [],
   "author": "LuKa <kaj.lund@gmail.com>",

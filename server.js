@@ -27,8 +27,21 @@ const port = process.env.PORT || 5000;
 
 // Serve public folder files
 fastify.register(require('fastify-static'), {
-  root: path.join(__dirname, '..', 'public'),
+  root: path.join(__dirname, 'public'),
 });
+
+fastify.register(require('point-of-view'), {
+  engine: {
+    ejs: require('ejs'),
+  },
+  root: path.join(__dirname, 'views'),
+  defaultContext: {
+    siteName: 'kajlund.com',
+  },
+});
+
+// Register Routes plugin
+fastify.register(require('./routes'));
 
 // Run the server
 const start = async () => {
