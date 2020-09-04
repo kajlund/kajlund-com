@@ -5,6 +5,8 @@
   "main": "./server.js",
   "scripts": {
     "dev": "nodemon ./server.js",
+    "format": "prettier --write server.js routes/*.js src/**/*.js",
+    "lint": "eslint . --ignore-pattern 'node_modules/' --config .eslintrc.json",
     "start": "node ./server.js"
   },
   "keywords": [],
