@@ -7,7 +7,7 @@ const fp = require('fastify-plugin');
 module.exports = fp((fastify, options, done) => {
   fastify.get('/', async function (req, reply) {
     return reply.view('/layout/index.ejs', {
-      pageTitle: 'Welcome',
+      pageTitle: 'Welcome!',
       template: 'home',
     });
   });

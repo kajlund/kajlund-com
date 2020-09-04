@@ -4,23 +4,22 @@
     <title><%= siteName %> | <%= pageTitle %></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/fontawesome.min.css"
     />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/nav.css" />
   </head>
   <body>
-    <header>
-      <%- include('./partials/navigation') %>
-    </header>
-    <div class="content">
-      <h1><%= pageTitle %></h1>
-      <%- include(`../pages/${template}`) %>
-    </div>
+      <header>
+        <%- include('./partials/navigation') %>
+      </header>
+      <main>
+        <%- include(`../pages/${template}`) %>
+      </main>
+      <footer>
+        &copy; LuKa, 2020
+      </footer>
     <%- include('./partials/scripts') %>
   </body>
 </html>
