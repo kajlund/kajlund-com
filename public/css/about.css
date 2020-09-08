@@ -1,0 +1,50 @@
+.about {
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
+
+.about article {
+  background-color: var(--color-primary);
+  color: var(--bgcolor-primary);
+  opacity: 1;
+  margin: 2rem;
+  padding: 2rem;
+  max-width: 900px;
+}
+
+.about img {
+  opacity: 1;
+  max-width: 100px;
+  border: 1px solid var(--bgcolor-primary);
+  border-radius: 15%;
+  float: right;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.about h1 {
+  font-size: 2rem;
+}
+
+.about h2 {
+  font-size: 1.5rem;
+}
+
+.about h3 {
+  font-size: 1.2rem;
+}
+
+.about ul {
+  margin-left: 1rem;
+}
+
+.about ul li {
+  list-style-type: square;
+  margin-bottom: .3rem; 
+}
